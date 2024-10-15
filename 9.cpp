@@ -4,18 +4,20 @@ using namespace std;
 int main()
 {
     int s,e,i,j;
-cout << "enter your staring number:\n";
-cin >> s;
-
+char ch='A';
 cout << "enter your ending number:\n";
 cin >> e;
 
-for (i=s; i<=e; i++)
+for (i=0; i<e; i++)
 {
-for ( j=s; j<=e; j++){
-cout << j << " ";
+    for ( j=0; j<i+1; j++){
+    //cout << i+1;
+    cout << ch;
+    }
+    ch+=1;
+    cout << endl;
 }
-cout << endl;
-}
+
+
 return 0;
 }

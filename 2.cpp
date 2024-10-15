@@ -1,27 +1,23 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int marks;
-cout << "enter your marks" << endl;
-cin >> marks;
+int s,e,i,j;
+cout << "enter your staring number:\n";
+cin >> s;
 
-if (marks>=90)
+cout << "enter your ending number:\n";
+cin >> e;
+
+for (i=s; i<=e; i++)
 {
-cout << "Grade A" << endl;
+for ( j=s; j<=i; j++){
+cout << "* ";
 }
-else if ((marks>90) || (marks>50))
-{
-cout << "Grade B" << endl;
+cout << endl;
 }
-else if ((marks>=33) || (marks==50))
-{
-cout << " Grade C" << endl;
-}
-else 
-cout << "fail" << endl;
+
 
 return 0;
 }

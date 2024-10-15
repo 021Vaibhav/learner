@@ -1,19 +1,28 @@
 #include <iostream>
 using namespace std;
 
-
 int main()
 {
-int i,start,end;
+int s,e,j,i;
+int num=1;
 
-cout << "enter your starting number";
-cin >> start;
-cout << "enter your ending number";
-cin >> end;
-for (i = start; i <= end; i++) {
-    cout << i << endl;
+//s=3;
+//e=5;
+
+cout << "number of lines:\n";
+cin >> s;
+
+cout << "number in lines:\n";
+cin >> e;
+
+for (i=0; i<s; i++)
+{
+for (j=0; j<e; j++){
+cout << num << " ";
+num +=1;
 }
-
-
-    return 0;
+cout << endl;
+}
+cout << "after pattern:" << num << endl;
+return 0;
 }

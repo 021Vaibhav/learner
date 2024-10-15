@@ -1,21 +1,23 @@
 #include <iostream>
 using namespace std;
-// of even and odd number sum
-int main (){
 
-int i,sum=0,start,end;
+int main(){
 
-cout << "enter your starting number";
-cin >> start;
-cout << "enter your ending number";
-cin >> end;
-for (i = start; i <= end; i++) {
- if (i%2 != 0){
-    sum+=i;
+int n,i,j;
+char ch='A';
+cout << "enter your number:\n";
+cin >> n;
 
- }
+for (i=0; i<=n; i++)
+{
+for ( j=1; j<=i; j++){
+    ch='A'+j-1;
+    cout << ch << " ";
+   
+   //cout << j << " ";
 }
-cout << " oddsum=" << sum << endl;
+cout << endl;
+}
+
 return 0;
 }
-

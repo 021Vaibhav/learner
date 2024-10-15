@@ -1,17 +1,23 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-char ch;
-cout << "enter your ch" << endl;
-cin >> ch;
+int s,e,j,i;
+char ch='A';
+cout << "enter number of lines:\n";
+cin >> s;
 
-if ((ch >= 'a') && (ch <= 'z'))
-{
-    cout << " lowercase ch" << endl;
+cout << "enter your ending number:\n";
+cin >> e;
+for ( i=0; i<s; i++){
+//char ch='A';
+for ( j=0; j<e; j++){
+cout<< ch << " ";
+ch = ch+1;
 }
-else 
-cout << "upercase ch" << endl; 
+cout << endl;
 
-    return 0;
+}
+return 0;
 }

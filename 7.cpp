@@ -1,25 +1,24 @@
 #include <iostream>
 using namespace std;
-int main(){
-    int i,n;
-bool isprime=true;
 
-cout << "enter your number\n";
+int main()
+{
+int n,i,j;
+char ch='A';
+cout << "enter your number:\n";
 cin >> n;
 
-for (i=2; i<=n-1; i++)
+for (i=0; i<=n; i++)
 {
-    if (n%i==0){
-        isprime=false;
-        break;
-    }
+for ( j=i+1; j>0; j--){
+   ch='A'+j-1;
+   cout << ch << " ";
+
+   //cout << j;
+
 }
-if ( isprime == true )
-{
-    cout << "number is prime\n";
-}
-else   {  cout << "number is not prime\n";
-}
-return 0;
+cout << endl;
 }
 
+return 0;
+}

@@ -1,21 +1,31 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-int i,sum=0,start,end;
+int main()
+{
+int n,i,j;
+int num=1;
+char alp='A';
+cout << "enter your number:\n";
+cin >> n;
 
-cout << "enter your starting number";
-cin >> start;
-cout << "enter your ending number";
-cin >> end;
-for (i = start; i <= end; i++) {
-    //sum+=i;
-    // we can add break statment to stop the loop
-    //now here if we put value for that 5 loop will break
-   //if ( i==5)
-   // break;
-   cout << i ;
+for (i=0; i<=n; i++)
+{
+for ( j=0; j<=i; j++){
+//cout << "* " ;
+
+cout << num ;
+//num+=1;
+
+//cout << alp;
+//alp+=1;
+
 }
-//cout << "sum=" << sum << endl;
-    return 0;
+num+=1;
+//alp+=1;
+cout << "\n";
+
+}
+cout << endl;
+return 0;
 }
